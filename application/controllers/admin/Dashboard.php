@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller
     {
         parent::__construct();
         if ($this->session->userdata('id') == null) {
-            redirect('admin/Auth_admin/login');
+            redirect('admin/Auth_admin/login'); 
         }
     }
     public function index()

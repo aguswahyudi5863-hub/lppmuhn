@@ -30,3 +30,54 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
+
+#--------------------------------------------------------------------
+# Environment Settings
+#--------------------------------------------------------------------
+.env
+.env.test
+
+#--------------------------------------------------------------------
+# Dependencies
+#--------------------------------------------------------------------
+/vendor/
+/node_modules/
+
+#--------------------------------------------------------------------
+# CodeIgniter 4 Writeable Directory
+#--------------------------------------------------------------------
+/writable/cache/*
+/writable/debugbar/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+
+# Keep structural git keeps so folders exist on fresh clones
+!.env.example
+!/writable/cache/.gitkeep
+!/writable/debugbar/.gitkeep
+!/writable/logs/.gitkeep
+!/writable/session/.gitkeep
+!/writable/uploads/.gitkeep
+
+#--------------------------------------------------------------------
+# Testing & Development Artifacts
+#--------------------------------------------------------------------
+/build/
+.phpunit.result.cache
+
+#--------------------------------------------------------------------
+# Operating System & IDE Files
+#--------------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# JetBrains (PhpStorm, WebStorm, etc.)
+.idea/
+
+# VS Code
+.vscode/
