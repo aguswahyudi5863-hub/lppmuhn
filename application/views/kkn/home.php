@@ -322,7 +322,7 @@
 
             $.ajax({
                 type : "POST",
-                url  : "<?php echo base_url('kkn/create_akun')?>",
+                url  : "<?php echo base_url('Kkn/create_akun')?>",
                 dataType : "JSON",
                 data : formData, // Menggunakan variabel formData
                 processData: false, // WAJIB DISET FALSE JIKA KIRIM FILE
@@ -393,7 +393,7 @@
                 }
                 $.ajax({
                     type : "POST",
-                    url  : "<?php echo base_url('kkn/login')?>",
+                    url  : "<?php echo base_url('Kkn/login')?>",
                     dataType : "JSON",
                     data : {
                         nim:login_nim,
@@ -416,7 +416,7 @@
                                 confirmButtonText: 'Ok',
                                 allowOutsideClick:false
                             }).then((result) => { 
-                                window.location.href = "<?= base_url('/kkn')?>";
+                                window.location.href = "<?= base_url('/Kkn')?>";
                             })
                         }
                 

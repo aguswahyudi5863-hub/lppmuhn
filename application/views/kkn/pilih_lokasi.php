@@ -60,7 +60,7 @@
 
         $.ajax({
             type : "POST",
-            url  : "<?php echo base_url('kkn/daftar_lokasi')?>",
+            url  : "<?php echo base_url('Kkn/daftar_lokasi')?>",
             dataType : "JSON",
             data : {
                 kabupaten:kabupaten,
@@ -113,7 +113,7 @@
     function pilih_lokasi(kode){
         $.ajax({
             type : "POST",
-            url  : "<?php echo base_url('kkn/trans_pilih_lokasi')?>",
+            url  : "<?php echo base_url('Kkn/trans_pilih_lokasi')?>",
             dataType : "JSON",
             data : {
                 kode:kode

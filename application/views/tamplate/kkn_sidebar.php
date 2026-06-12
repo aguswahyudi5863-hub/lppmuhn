@@ -39,10 +39,10 @@ if (sidebarToggle) {
             </div>
         </div>
         <div class="list-group list-group-flush">
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/kkn/dashboard') ?>">Home</a>
-            <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/kkn/profil') ?>">Update Biodata</a> -->
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/kkn/lokasi') ?>"> Lokasi KKN</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/kkn/logout') ?>"> Logout</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/Kkn/dashboard') ?>">Home</a>
+            <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/Kkn/profil') ?>">Update Biodata</a> -->
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/Kkn/lokasi') ?>"> Lokasi KKN</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?= base_url('/Kkn/logout') ?>"> Logout</a>
         </div>
     </div>
        

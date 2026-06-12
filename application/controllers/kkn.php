@@ -48,10 +48,10 @@ class Kkn extends CI_Controller{
         $sess_login = $this->session->userdata('sess_login');
         if(@$sess_id && @$sess_login){
             if($sess_login != '1'){
-                redirect('/kkn', 'refresh');
+                redirect('/Kkn', 'refresh');
             }
         }else{
-            redirect('/kkn', 'refresh');
+            redirect('/Kkn', 'refresh');
         }
     }
     /*
@@ -64,7 +64,7 @@ class Kkn extends CI_Controller{
         $sess_login = $this->session->userdata('sess_login');
         if(@$sess_id && @$sess_login){
             if($sess_login == '1'){
-                redirect('/kkn/dashboard', 'refresh');
+                redirect('/Kkn/dashboard', 'refresh');
             }
         }
     }   
@@ -77,7 +77,7 @@ class Kkn extends CI_Controller{
         $this->check_session_login();
         $data['data_prodi'] = $this->m_prodi->get_prodi();
         $this->load->view('tamplate/kkn_header.php');
-        $this->load->view('kkn/home.php',$data);
+        $this->load->view('Kkn/home.php',$data);
         $this->load->view('tamplate/kkn_footer.php');
     }
     /*
@@ -91,7 +91,7 @@ class Kkn extends CI_Controller{
         $data['profil'] = $this->m_akun_mhs->detail_akun($nim);
         $this->load->view('tamplate/kkn_header.php');
         $this->load->view('tamplate/kkn_sidebar.php');
-        $this->load->view('kkn/dashboard.php',$data);
+        $this->load->view('Kkn/dashboard.php',$data);
         $this->load->view('tamplate/kkn_footer.php');
     }
     /*
@@ -105,7 +105,7 @@ class Kkn extends CI_Controller{
         $data['profil'] = $this->m_akun_mhs->detail_akun($nim);
         $this->load->view('tamplate/kkn_header.php');
         $this->load->view('tamplate/kkn_sidebar.php');
-        $this->load->view('kkn/update_profil.php',$data);
+        $this->load->view('Kkn/update_profil.php',$data);
         $this->load->view('tamplate/kkn_footer.php');
     }
     /*
@@ -124,9 +124,9 @@ class Kkn extends CI_Controller{
         $this->load->view('tamplate/kkn_header.php');
         $this->load->view('tamplate/kkn_sidebar.php');
         if($mhs->kkn_kode != ''){
-            $this->load->view('kkn/lokasi.php',$data);
+            $this->load->view('Kkn/lokasi.php',$data);
         }else{
-            $this->load->view('kkn/pilih_lokasi.php',$data);
+            $this->load->view('Kkn/pilih_lokasi.php',$data);
         }
         $this->load->view('tamplate/kkn_footer.php');
         
@@ -258,7 +258,7 @@ class Kkn extends CI_Controller{
     */
     public function logout(){
         $this->session->sess_destroy();
-            redirect('/kkn', 'refresh');
+            redirect('/Kkn', 'refresh');
     }
     /*
     |--------------------------------------------------------------------------

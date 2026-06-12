@@ -59,7 +59,7 @@
 
                                      <ul class="dropdown-menu">
                                          <li class="nav-item">
-                                             <a href="<?php echo base_url('kkn') ?>" class="nav-link">KKN</a>
+                                             <a href="<?php echo base_url('Kkn') ?>" class="nav-link">KKN</a>
                                          </li>
                                          <li class="nav-item">
                                              <a href="portfolio-columns-three.html" class="nav-link">BERBASIS PRODI</a>

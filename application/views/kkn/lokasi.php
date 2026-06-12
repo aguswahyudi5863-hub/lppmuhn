@@ -16,7 +16,7 @@
                 <h2>Anda belum memilih lokasi KKN </h2>
                 <span>Silahkan pilih dahulu lokasi KKN melalui menu pilih lokasi</span>
                 <br>
-                <a class="btn btn-primary mt-3" href="<?= base_url('kkn/pilih_lokasi') ?>">Pilih Lokasi</a>
+                <a class="btn btn-primary mt-3" href="<?= base_url('Kkn/pilih_lokasi') ?>">Pilih Lokasi</a>
             </div>
         </div>
 
